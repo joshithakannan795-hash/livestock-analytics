@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Growth & Productivity - Livestock Analytics</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', Arial, sans-serif; }
+        body { display: flex; background: #f4f6f9; color: #333; min-height: 100vh; }
+        .sidebar { width: 260px; background: #2c3e50; color: #fff; padding: 20px; display: flex; flex-direction: column; }
+        .sidebar h2 { font-size: 20px; margin-bottom: 30px; text-align: center; color: #2ecc71; }
+        .sidebar a { color: #ecf0f1; text-decoration: none; padding: 12px; margin-bottom: 8px; border-radius: 4px; display: block; font-size: 14px; transition: 0.2s; }
+        .sidebar a:hover, .sidebar a.active { background: #34495e; color: #2ecc71; border-left: 4px solid #2ecc71; }
+        .main-content { flex: 1; padding: 30px; overflow-y: auto; }
+        header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 30px; border-bottom: 2px solid #ddd; padding-bottom: 15px; }
+        header h1 { font-size: 26px; color: #2c3e50; }
+        .panel { background: white; padding: 20px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); margin-bottom: 25px; }
+        .panel h3 { margin-bottom: 15px; color: #2c3e50; border-bottom: 1px solid #eee; padding-bottom: 10px; }
+        table { width: 100%; border-collapse: collapse; text-align: left; }
+        th, td { padding: 12px; border-bottom: 1px solid #eee; font-size: 14px; }
+        th { background: #f8f9fa; }
+        .chart-box { background: #fcfcfc; border: 1px dashed #ccc; height: 180px; border-radius: 6px; display: flex; align-items: center; justify-content: center; color: #7f8c8d; font-style: italic; margin-bottom: 20px; font-size: 14px; }
+        .progress-bar { background: #eee; border-radius: 10px; height: 12px; width: 100%; overflow: hidden; margin-top: 5px; }
+        .progress-fill { background: #3498db; height: 100%; border-radius: 10px; }
+    </style>
+</head>
+<body>
+
+    <div class="sidebar">
+        <h2>Livestock Analytics</h2>
+        <a href="index.html">Real-Time Monitor</a>
+        <a href="health.html">Animal Health & Breeding</a>
+        <a href="growth.html" class="active">Growth & Productivity</a>
+        <a href="nutrition.html">Feeding & Nutrition</a>
+        <a href="reports.html">Digital Reports</a>
+    </div>
+
+    <div class="main-content">
+        <header>
+            <h1>Growth & Productivity Tracking</h1>
+        </header>
+
+        <!-- Simulated Visual Graph Area -->
+        <div class="panel">
+            <h3>Average Weight Gain Trend ( Herd Performance )</h3>
+            <div class="chart-box">
+                📈 [ Simulated Analytics Chart: Growth Curve Target vs Actual Weight (+1.2 kg/day Avg) ]
+            </div>
+        </div>
+
+        <div class="panel">
+            <h3>Animal Performance Matrix</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Animal ID</th>
+                        <th>Current Weight</th>
+                        <th>Monthly Gain Target Achievement</th>
+                        <th>Productivity Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>#COW-0412</td>
+                        <td>540 kg</td>
+                        <td>
+                            Target: 95%
+                            <div class="progress-bar"><div class="progress-fill" style="width: 95%;"></div></div>
+                        </td>
+                        <td style="color:#2ecc71; font-weight:bold;">Excellent Growth</td>
+                    </tr>
+                    <tr>
+                        <td>#COW-0414</td>
+                        <td>495 kg</td>
+                        <td>
+                            Target: 88%
+                            <div class="progress-bar"><div class="progress-fill" style="width: 88%;"></div></div>
+                        </td>
+                        <td style="color:#2ecc71; font-weight:bold;">Optimal Condition</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+</body>
+</html>
